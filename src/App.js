@@ -4,6 +4,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap:wrap;
+  // background-color: #dec49b;
+
 `;
 
 const Header = styled.div`
@@ -29,7 +31,7 @@ const AppIcon = styled.img`
   height: 120px;
 `;
 
-const SearchIcon=styled.img`
+const SearchIcon = styled.img`
 width:36px;
 height:36px;
 `;
@@ -51,7 +53,7 @@ font-size:16px;
 font-weight:bold;
 `;
 
-const FoodListContainer=styled.div`
+const FoodListContainer = styled.div`
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
@@ -60,7 +62,7 @@ gap:20px;
 justify-content:space-evenly;
 `;
 
-const FoodContainer=styled.div`
+const FoodContainer = styled.div`
 display:flex;
 flex-direction:column;
 padding:10px;
@@ -75,8 +77,8 @@ function App() {
       <Header>
         <AppNameComponent>
           <AppIcon src="/mohinga.png" />
-        Burmese Food Finder
-          </AppNameComponent>
+          Burmese Food Finder
+        </AppNameComponent>
         <SearchComponent>
           <SearchIcon src="/search-icon.svg" />
           <SearchInput placeholder="search" />
@@ -86,122 +88,122 @@ function App() {
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
         <FoodContainer>
           <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
           <span>
-Mohinga
+            Mohinga
           </span>
           <span>
             ingredients
-            </span>
-            <span>
+          </span>
+          <span>
             see more recipe
-            </span>
+          </span>
         </FoodContainer>
       </FoodListContainer>
     </Container>
