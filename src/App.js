@@ -106,7 +106,7 @@ function App() {
             ingredients
           </span>
           <span>
-            see more recipe
+            see more recipee
           </span>
         </FoodContainer>
         <FoodContainer>
