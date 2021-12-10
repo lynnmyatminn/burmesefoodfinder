@@ -1,3 +1,5 @@
+import axios from "axios";
+import { lazy, useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -72,6 +74,47 @@ box-shadow:0 3px 10px 0 #aaa;
 
 
 function App() {
+
+  const APP_ID = "a52b4d43";
+  const APP_KEY = "e0e5c667605f5e91d8275c973531b80a";
+
+  const [timeoutId, setTimeOutId] = useState();
+  const [foodList, setFoodList] = useState([]);
+
+  const fetchAPI = async (searchtext) => {
+    const resp = await
+      axios.get(`https://api.edamam.com/search?q=${searchtext}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    // .then(function (resp) {
+    //   console.log(resp)
+    // })
+    console.log(resp);
+    setFoodList(resp.data.hits);
+  }
+
+  const onTextChange = (event) => {
+    clearTimeout(timeoutId);
+    const timeout = setTimeout(() => fetchAPI(event.target.value), 500);
+    setTimeOutId(timeout);
+  }
+
+  const FoodComponent = ({ food }) => {
+    return (
+      <FoodContainer>
+        <img src={food.image} loading={lazy} />
+        <span>
+          {food.label}
+        </span>
+        <span>
+          ingredients
+        </span>
+        <span color="blue" onClick={() => window.open(food.url)}>
+          see more recipe
+        </span>
+
+      </FoodContainer>
+    )
+  }
+
   return (
     <Container>
       <Header>
@@ -81,130 +124,13 @@ function App() {
         </AppNameComponent>
         <SearchComponent>
           <SearchIcon src="/search-icon.svg" />
-          <SearchInput placeholder="search" />
+          <SearchInput placeholder="search" onChange={onTextChange} />
         </SearchComponent>
       </Header>
       <FoodListContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipee
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
-        <FoodContainer>
-          <img src="https://prods3.imgix.net/images/articles/2017_03/Non-Feature-Burma-Superstar-Mohinga-Breakfast-Stew.jpg?auto=format%2Ccompress&dpr=2.63&ixjsv=2.2.3&q=38&w=370" />
-          <span>
-            Mohinga
-          </span>
-          <span>
-            ingredients
-          </span>
-          <span>
-            see more recipe
-          </span>
-        </FoodContainer>
+        {foodList.length && foodList.map((food) => (
+          <FoodComponent food={food.recipe} />
+        ))}
       </FoodListContainer>
     </Container>
   );
