@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/burmesefoodfinder/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/burmesefoodfinder/static/js/main.47f2de07.chunk.js",
+    "main.js.map": "/burmesefoodfinder/static/js/main.47f2de07.chunk.js.map",
+    "runtime-main.js": "/burmesefoodfinder/static/js/runtime-main.7f966954.js",
+    "runtime-main.js.map": "/burmesefoodfinder/static/js/runtime-main.7f966954.js.map",
+    "static/js/2.5ad9a5fc.chunk.js": "/burmesefoodfinder/static/js/2.5ad9a5fc.chunk.js",
+    "static/js/2.5ad9a5fc.chunk.js.map": "/burmesefoodfinder/static/js/2.5ad9a5fc.chunk.js.map",
+    "static/js/3.23315797.chunk.js": "/burmesefoodfinder/static/js/3.23315797.chunk.js",
+    "static/js/3.23315797.chunk.js.map": "/burmesefoodfinder/static/js/3.23315797.chunk.js.map",
+    "index.html": "/burmesefoodfinder/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/burmesefoodfinder/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.5ad9a5fc.chunk.js.LICENSE.txt": "/burmesefoodfinder/static/js/2.5ad9a5fc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f966954.js",
+    "static/js/2.5ad9a5fc.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.47f2de07.chunk.js"
+  ]
+}
